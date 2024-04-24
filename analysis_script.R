@@ -34,7 +34,7 @@ dev.off()
 analysis_results <- lapply(gated_samples, function(x) {
     # Perform your analysis here
     # Example: Mean fluorescence intensity (MFI) calculation
-    mfi <- exprs(x, "APC-A")
+    mfi <- exprs(x, "Channel1")
     return(mean(mfi))
 })
 
