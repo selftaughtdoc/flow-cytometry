@@ -8,7 +8,7 @@ file_paths <- list.files(path = "data/", pattern = ".fcs$", full.names = TRUE)
 samples <- read.FCS(file_paths)
 
 # Define compensation controls
-controls <- c("APC", "FixableVioletDead")
+controls <- c("Channel1", "Channel2")
 
 # Calculate compensation
 comp <- spillover(samples[, controls])
